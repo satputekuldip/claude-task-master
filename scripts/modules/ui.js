@@ -432,7 +432,7 @@ function truncateString(str, maxLength) {
  * @param {string} tasksPath - Path to the tasks.json file
  */
 async function displayNextTask(tasksPath) {
-  displayBanner();
+  // displayBanner();
   
   // Read the tasks file
   const data = readJSON(tasksPath);
@@ -623,7 +623,7 @@ async function displayNextTask(tasksPath) {
  * @param {string|number} taskId - The ID of the task to display
  */
 async function displayTaskById(tasksPath, taskId) {
-  displayBanner();
+  // displayBanner();
   
   // Read the tasks file
   const data = readJSON(tasksPath);
@@ -868,7 +868,7 @@ async function displayTaskById(tasksPath, taskId) {
  * @param {string} reportPath - Path to the complexity report file
  */
 async function displayComplexityReport(reportPath) {
-  displayBanner();
+  // displayBanner();
   
   // Check if the report exists
   if (!fs.existsSync(reportPath)) {
